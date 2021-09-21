@@ -1,0 +1,129 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: Helvetica;
+}
+.skyBlue {color: rgb(76, 101, 211);}
+.home {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.GoldenBackground {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: url(assets/ressources/golden_gate.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+.manBack {
+    position: absolute;
+    width: 80%;
+    height: 100vh;
+    background: url(assets/ressources/upper.png) no-repeat 50% 50%;
+    background-size: cover;
+    top: 20%;
+    overflow: hidden;
+}
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 25%;
+    background: url(assets/ressources/text.png) no-repeat 50% 50%;
+    background: cover;
+    mix-blend-mode: overlay;
+}
+.clouds {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(assets/ressources/clouds.png) no-repeat 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+}
+.content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+h1 {
+   font-size: 42px;
+   text-transform: uppercase;
+   text-align: center;
+}
+p {
+    line-height: 40px;
+    text-align: justify;
+}
+section {
+    background: url(assets/ressources/hero.png) no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+.grid {
+    display: grid;
+    grid-template: repeat(17, 150px) /1fr repeat(10, 150px) 1fr;
+}
+img {
+    height: auto;
+    width: 100%;
+}
+.img1 {
+    grid-area: 2 / 8 / 6 / 11;
+}
+.txt1 {
+    position: relative;
+    right: 200px;
+    bottom: 100px;
+}
+.img2 {
+    grid-area: 3 / 2 / 4 / 12;
+    position: relative;
+    right: 300px;
+    bottom: 200px;
+    transform: scale(0.65);
+}
+.img3 {
+    grid-area: 7 / 3 / 11 / 6; 
+}
+.txt2 {
+    position: relative;
+    left: 200px;
+    bottom: 600px;
+    font-size: 25px;   
+}
+.img4 {
+    grid-area: 8 / 2 / 9 / 12; 
+    position: relative;
+    left: 200px;
+    bottom: 300px;
+}
+.img5 {
+    grid-area: 11 / 8 / 15 / 11; 
+}
+.txt3 {
+    position: relative;
+    right: 200px;
+    bottom: 600px; 
+    font-size: 25px;
+}
+.img6 {
+    grid-area: 12 / 2 / 13 / 12; 
+    position: relative;
+    right: 200px;
+    bottom: 200px;
+}
+#telepherique {
+    grid-area: 12 / 2 / 13 / 12; 
+    position: relative;
+    top: 500px;
+    width: 80px;
+    transform: translateX(-80px);
+    z-index: 200;
+
+}
